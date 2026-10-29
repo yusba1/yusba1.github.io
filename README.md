@@ -7,8 +7,8 @@ Personal homepage featuring selected research and projects.
 ## Contents
 
 - Three selected papers: one IJCAI-ECAI 2026 paper and two arXiv preprints
-- George Interview: product demonstration and campus presentation
-- Education, honors, recent updates, and contact information
+- George Interview: product demonstration and campus pilot results
+- Education, honors, and contact information
 
 ## Local preview
 
