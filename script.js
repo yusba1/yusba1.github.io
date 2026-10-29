@@ -12,6 +12,7 @@ menuButton.addEventListener('click', () => {
   menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
 });
 navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+document.querySelector('.brand').addEventListener('click', closeMenu);
 document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
 document.addEventListener('click', event => { if (!event.target.closest('.site-header')) closeMenu(); });
 window.matchMedia('(min-width: 681px)').addEventListener('change', closeMenu);
@@ -23,6 +24,7 @@ function updateActiveLink() {
   const threshold = window.innerHeight * .35;
   let active = sections[0];
   for (const section of sections) if (section.getBoundingClientRect().top <= threshold) active = section;
+  if (window.scrollY > 0 && window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) active = sections[sections.length - 1];
   for (const link of sectionLinks) {
     const selected = link.getAttribute('href') === `#${active.id}`;
     link.classList.toggle('active', selected);

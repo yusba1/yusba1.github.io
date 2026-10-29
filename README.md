@@ -2,6 +2,10 @@
 
 Personal homepage featuring selected research and projects.
 
+The desktop layout pairs a persistent personal profile with one continuous
+reading column. On smaller screens, the profile and content form a single column.
+Each paper and project appears once.
+
 **Website: https://yusba1.github.io/**
 
 ## Contents
