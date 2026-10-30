@@ -12,7 +12,7 @@ Each paper and project appears once.
 
 - Three selected papers: one IJCAI-ECAI 2026 paper and two arXiv preprints
 - George Interview: product demonstration and competition recognition
-- Education, honors, and contact information
+- Education and contact information
 
 ## Local preview
 
