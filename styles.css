@@ -3,7 +3,8 @@
 :root {
   --ink: #253342;
   --muted: #68747f;
-  --accent: #315f79;
+  --accent: #1d5ee7;
+  --accent-soft: #eef4ff;
   --line: #e8ecef;
   --wash: #f4f7f9;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif;
@@ -20,8 +21,8 @@ img { display: block; max-width: 100%; height: auto; }
 h1, h2, h3, p, figure { margin: 0; }
 h1, h2, h3 { font-weight: 650; line-height: 1.3; }
 strong { font-weight: 600; }
-::selection { color: #183f55; background: #dceaf3; }
-:focus-visible { outline: 3px solid #6d9bb7; outline-offset: 4px; }
+::selection { color: #153b91; background: #dce8ff; }
+:focus-visible { outline: 3px solid #4b80ee; outline-offset: 4px; }
 .shell { width: min(1200px, calc(100% - 96px)); margin-inline: auto; }
 .skip-link { position: fixed; left: 16px; top: -80px; padding: 12px 18px; color: white; background: var(--ink); z-index: 100; }
 .skip-link:focus { top: 12px; }
@@ -35,7 +36,7 @@ strong { font-weight: 600; }
 nav { display: flex; gap: 5px; align-items: center; }
 nav a { font-size: 15px; padding: 10px 13px; border-radius: 4px; color: #606d78; }
 nav a:hover { color: var(--accent); text-decoration: none; background: #f7f9fa; }
-nav a.active { color: var(--accent); background: #edf4f8; }
+nav a.active { color: var(--accent); background: var(--accent-soft); }
 .menu-toggle { display: none; background: transparent; }
 .page-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 56px; align-items: start; padding-top: 48px; }
 .profile { position: sticky; top: 120px; padding-top: 2px; }
@@ -47,13 +48,13 @@ nav a.active { color: var(--accent); background: #edf4f8; }
 .profile-links { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 14px; font-size: 15px; color: var(--muted); }
 .profile-links li { display: flex; align-items: center; gap: 11px; }
 .profile-links svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: none; }
-.profile-links a { color: #526674; overflow-wrap: anywhere; }
+.profile-links a { color: var(--accent); overflow-wrap: anywhere; }
 .profile-links a span { font-size: 12px; margin-left: 3px; }
 .page-content { min-width: 0; }
 .about-section h2 { font-size: 28px; letter-spacing: -.02em; margin-bottom: 20px; }
 .about-section p { max-width: 760px; font-size: 18px; line-height: 1.8; }
 .about-section .intro-lead { font-size: 20px; line-height: 1.75; margin-bottom: 14px; }
-.about-section strong { color: #2b465a; }
+.about-section strong { color: var(--accent); }
 .content-section { margin-top: 42px; }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 24px; }
 .section-heading h2 { font-size: 28px; letter-spacing: -.02em; }
@@ -68,12 +69,12 @@ nav a.active { color: var(--accent); background: #edf4f8; }
 .publication-copy { min-width: 0; }
 .paper-meta { margin-bottom: 7px; line-height: 1.4; }
 .venue { color: var(--accent); font-size: 12px; letter-spacing: .045em; font-weight: 650; }
-.venue.preprint { color: #5e6f7e; }
+.venue.preprint { color: var(--accent); }
 .publication h3 { font-size: 21px; line-height: 1.4; letter-spacing: -.012em; }
 .publication h3 a { color: var(--ink); }
 .publication h3 a:hover { color: var(--accent); }
 .authors { margin-top: 10px; font-size: 15px; line-height: 1.75; color: var(--muted); }
-.authors strong { color: var(--ink); }
+.authors strong { color: var(--accent); }
 .paper-links { display: flex; align-items: center; flex-wrap: wrap; gap: 5px 21px; margin-top: 10px; }
 .paper-links > a, .paper-links > button, .text-link { display: inline-flex; align-items: center; gap: 5px; font-size: 14px; line-height: 1.6; font-weight: 550; color: var(--accent); background: none; padding: 4px 0; }
 .paper-links > button:hover { text-decoration: underline; text-underline-offset: 4px; }
@@ -83,14 +84,12 @@ nav a.active { color: var(--accent); background: #edf4f8; }
 .project-media { min-width: 0; padding-top: 2px; }
 .project-media video { width: 100%; aspect-ratio: 1.685; display: block; border: 1px solid #e2e7ed; border-radius: 6px; background: #f3f2f8; }
 .video-caption { font-size: 12px; color: var(--muted); margin-top: 8px; }
-.entry-label { color: var(--accent); font-size: 11px; font-weight: 650; letter-spacing: .05em; margin-bottom: 7px; }
 .project-copy h3 { font-size: 23px; letter-spacing: -.01em; }
 .project-description { font-size: 16px; line-height: 1.75; margin-top: 10px; }
-.project-impact { font-size: 15px; line-height: 1.75; color: var(--muted); margin-top: 10px; }
-.project-impact strong { font-weight: 550; color: #455a6b; }
-.project-recognition { display: grid; gap: 11px; list-style: none; margin: 16px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); font-size: 15px; line-height: 1.65; }
-.project-recognition strong { display: block; font-weight: 600; color: var(--ink); }
-.project-recognition li > span { display: block; font-size: 14px; color: var(--muted); margin-top: 2px; }
+.project-recognition { display: grid; gap: 13px; list-style: none; margin: 17px 0 0; padding: 15px 18px; border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; background: var(--accent-soft); line-height: 1.5; }
+.project-recognition strong { display: block; font-size: 17px; font-weight: 650; color: var(--accent); }
+.project-recognition li:first-child strong { font-size: 21px; font-weight: 700; }
+.project-recognition li > span { display: block; font-size: 13px; color: #52627b; margin-top: 3px; }
 .project-copy .text-link { margin-top: 9px; }
 
 .education-entry { display: flex; align-items: flex-start; gap: 20px; }
@@ -105,6 +104,7 @@ nav a.active { color: var(--accent); background: #edf4f8; }
 .honors-list li { display: grid; grid-template-columns: 75px 1fr; gap: 16px; font-size: 17px; line-height: 1.6; }
 .honor-year { font-size: 14px; color: var(--muted); padding-top: 3px; }
 .honor-detail { display: block; color: var(--muted); font-size: 15px; margin-top: 2px; }
+.honors-list strong { color: var(--accent); }
 .site-footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); margin-top: 50px; padding-block: 22px 28px; color: var(--muted); font-size: 12px; }
 .site-footer a { color: var(--muted); }
 .site-footer a span { margin-left: 6px; }
@@ -112,7 +112,7 @@ nav a.active { color: var(--accent); background: #edf4f8; }
 /* The figures and citations stay available without crowding the reading flow. */
 .button { display: inline-flex; align-items: center; gap: 20px; padding: 11px 18px; border-radius: 5px; font-size: 15px; font-weight: 500; }
 .button-primary { color: white; background: var(--accent); }
-.button-primary:hover { background: #254a60; }
+.button-primary:hover { background: #174fc5; }
 dialog { border: 1px solid var(--line); border-radius: 10px; color: var(--ink); padding: 30px; box-shadow: 0 25px 90px #131c4530; max-height: 90dvh; }
 dialog::backdrop { background: #182633b3; backdrop-filter: blur(5px); }
 .dialog-close { position: absolute; right: 12px; top: 10px; font-size: 28px; line-height: 1; background: #f2f5f7; border-radius: 50%; height: 38px; width: 38px; color: #586b7b; z-index: 2; }
@@ -195,7 +195,6 @@ dialog::backdrop { background: #182633b3; backdrop-filter: blur(5px); }
   .project-media { max-width: none; }
   .project-copy h3 { font-size: 23px; }
   .project-description { font-size: 16px; }
-  .project-impact { font-size: 15px; }
   .education-entry { gap: 16px; }
   .university-mark { width: 49px; height: 56px; font-size: 18px; }
   .entry-heading { gap: 7px; }

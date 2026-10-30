@@ -11,7 +11,7 @@ Each paper and project appears once.
 ## Contents
 
 - Three selected papers: one IJCAI-ECAI 2026 paper and two arXiv preprints
-- George Interview: product demonstration and campus pilot results
+- George Interview: product demonstration and competition recognition
 - Education, honors, and contact information
 
 ## Local preview
@@ -41,5 +41,3 @@ GitHub Pages can publish directly from the `main` branch, `/ (root)` folder. `.n
 - [Benchmark Leakage Trap: Can We Trust LLM-based Recommendation?](https://arxiv.org/abs/2602.13626)
 - [Rethinking Evidence Modeling: Context-Coupled Graph Learning for Multimodal Recommendation](https://arxiv.org/abs/2610.15523)
 - [George Interview](https://github.com/zizi129/George-interview)
-
-Project usage figures describe the campus pilot and are not live analytics.
