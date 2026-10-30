@@ -40,6 +40,8 @@ nav a.active { color: var(--accent); background: var(--accent-soft); }
 .menu-toggle { display: none; background: transparent; }
 .page-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 56px; align-items: start; padding-top: 48px; }
 .profile { position: sticky; top: 120px; padding-top: 2px; }
+.profile-photo { width: 176px; height: 176px; margin-bottom: 22px; object-fit: cover; object-position: 50% 20%; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 1px var(--line); }
+.profile-identity { min-width: 0; }
 .profile h1 { font-size: 30px; line-height: 1.25; letter-spacing: -.025em; }
 .profile h1 span { display: block; font-size: 24px; font-weight: 400; letter-spacing: .04em; color: #5c6976; margin-top: 7px; }
 .profile-role { color: var(--accent); font-size: 17px; font-weight: 550; margin-top: 24px; }
@@ -139,12 +141,13 @@ dialog::backdrop { background: #182633b3; backdrop-filter: blur(5px); }
   .brand span { font-size: 14px; }
   nav a { font-size: 14px; padding-inline: 9px; }
   .page-layout { grid-template-columns: 1fr; gap: 32px; padding-top: 34px; }
-  .profile { position: static; display: grid; grid-template-columns: 1fr auto; column-gap: 32px; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+  .profile { position: static; display: grid; grid-template-columns: 112px minmax(0, 1fr) auto; column-gap: 24px; align-items: start; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+  .profile-photo { width: 112px; height: 112px; margin: 0; }
   .profile h1 { font-size: 31px; }
   .profile h1 span { display: inline-block; font-size: 23px; margin: 0 0 0 13px; }
-  .profile-role { margin-top: 12px; grid-column: 1; }
-  .profile-affiliation { grid-column: 1; margin-top: 5px; }
-  .profile-links { grid-column: 2; grid-row: 1 / 4; align-content: center; margin: 0; font-size: 15px; }
+  .profile-role { margin-top: 12px; }
+  .profile-affiliation { margin-top: 5px; }
+  .profile-links { grid-column: 3; grid-row: 1; align-self: center; margin: 0; font-size: 15px; }
   .about-section p { max-width: 100%; }
   .publication { grid-template-columns: 34% minmax(0, 1fr); gap: 24px; }
   .figure-button { height: 180px; }
@@ -164,13 +167,13 @@ dialog::backdrop { background: #182633b3; backdrop-filter: blur(5px); }
   nav.open { display: grid; }
   nav a { font-size: 16px; padding: 10px 12px; }
   .page-layout { padding-top: 30px; gap: 28px; }
-  .profile { display: block; padding-bottom: 26px; }
-  .profile h1 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 13px; font-size: 29px; }
+  .profile { grid-template-columns: 88px minmax(0, 1fr); column-gap: 16px; padding-bottom: 26px; }
+  .profile-photo { width: 88px; height: 88px; border-width: 3px; }
+  .profile h1 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 13px; font-size: 26px; }
   .profile h1 span { display: inline; font-size: 22px; margin: 0; }
   .profile-role { margin-top: 12px; font-size: 16px; }
-  .profile-affiliation { display: flex; flex-wrap: wrap; column-gap: 8px; font-size: 15px; line-height: 1.7; }
-  .profile-affiliation > span + span::before { content: "·"; margin-right: 8px; color: var(--muted); }
-  .profile-links { display: flex; flex-wrap: wrap; gap: 12px 23px; margin-top: 18px; font-size: 14px; }
+  .profile-affiliation { font-size: 15px; line-height: 1.7; }
+  .profile-links { grid-column: 1 / -1; grid-row: 2; display: flex; flex-wrap: wrap; gap: 12px 23px; margin-top: 18px; font-size: 14px; }
   .profile-links li:first-child { width: 100%; }
   .profile-links svg { width: 16px; height: 16px; }
   .about-section h2, .section-heading h2 { font-size: 26px; }
@@ -207,7 +210,9 @@ dialog::backdrop { background: #182633b3; backdrop-filter: blur(5px); }
   .shell { width: calc(100% - 32px); }
   .brand { gap: 7px; font-size: 14px; }
   .brand span { font-size: 12px; }
-  .profile h1 { font-size: 28px; }
+  .profile { grid-template-columns: 72px minmax(0, 1fr); column-gap: 14px; }
+  .profile-photo { width: 72px; height: 72px; }
+  .profile h1 { font-size: 24px; }
   .profile-links { gap: 12px 16px; font-size: 13px; }
   .paper-links { gap: 7px 18px; }
   .publication h3 { font-size: 20px; }
