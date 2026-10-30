@@ -41,3 +41,10 @@ GitHub Pages can publish directly from the `main` branch, `/ (root)` folder. `.n
 - [Benchmark Leakage Trap: Can We Trust LLM-based Recommendation?](https://arxiv.org/abs/2602.13626)
 - [Rethinking Evidence Modeling: Context-Coupled Graph Learning for Multimodal Recommendation](https://arxiv.org/abs/2610.15523)
 - [George Interview](https://github.com/zizi129/George-interview)
+
+## University emblem
+
+`assets/nju-emblem.jpg` is the unmodified official emblem supplied by the
+[Nanjing University Archives](https://dawww.nju.edu.cn/info/3061/69011.htm).
+It identifies the university in the Education section and retains its original
+color and proportions. The emblem belongs to Nanjing University.
