@@ -12,6 +12,7 @@ Each paper and project appears once.
 
 - Three selected papers: one IJCAI-ECAI 2026 paper and two arXiv preprints
 - George Interview: product demonstration and competition recognition
+- Wukong Guide (悟空伴行): offline obstacle detection and spoken guidance demo
 - Education and contact information
 
 ## Local preview
@@ -30,8 +31,8 @@ The site uses plain HTML, CSS, and JavaScript without a build step.
 
 - `index.html` — page content
 - `styles.css` — responsive layout and visual styles
-- `script.js` — navigation, image viewer, and citations
-- `assets/` — research figures, project images, and demo video
+- `script.js` — navigation and image viewer
+- `assets/` — research figures, project images, and demo videos
 
 GitHub Pages can publish directly from the `main` branch, `/ (root)` folder. `.nojekyll` disables Jekyll processing.
 
@@ -48,3 +49,10 @@ GitHub Pages can publish directly from the `main` branch, `/ (root)` folder. `.n
 [Nanjing University Archives](https://dawww.nju.edu.cn/info/3061/69011.htm).
 It identifies the university in the Education section and retains its original
 color and proportions. The emblem belongs to Nanjing University.
+
+## Wukong Guide media
+
+`assets/wukong-demo.mp4` is a web-optimized copy of the supplied 49.5-second
+demonstration, preserving the full video and its audio. `assets/wukong-poster.webp`
+is a frame from its outdoor obstacle-detection demonstration. The project summary
+is based on the supplied 悟空伴行 presentation.
