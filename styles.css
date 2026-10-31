@@ -63,20 +63,20 @@ nav a.active { color: var(--accent); box-shadow: inset 0 -2px var(--accent); }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 24px; }
 .section-heading h2 { font-size: 28px; letter-spacing: -.02em; }
 
-/* Equal rows and thumbnail frames keep all three papers on the same rhythm. */
+/* Center compact image and text groups within equally sized paper rows. */
 .research-section .section-heading { margin-bottom: 0; }
 .publication-list { display: grid; grid-auto-rows: 1fr; }
-.publication { display: grid; grid-template-columns: clamp(160px, 24%, 240px) minmax(0, 1fr); column-gap: 24px; align-items: stretch; min-height: 196px; padding-block: 14px; border-bottom: 1px solid var(--line); }
+.publication { display: grid; grid-template-columns: clamp(160px, 24%, 240px) minmax(0, 1fr); column-gap: 24px; align-items: center; min-height: 196px; padding-block: 14px; border-bottom: 1px solid var(--line); }
 .publication:last-child { border-bottom-color: transparent; }
-.publication-media { position: relative; align-self: start; min-width: 0; padding-top: 27px; }
+.publication-media { position: relative; align-self: center; min-width: 0; padding-top: 27px; }
 .figure-button { display: block; position: relative; width: 100%; aspect-ratio: 16 / 9; padding: 0; background: #fff; box-shadow: 0 2px 5px #1f2a371a; overflow: hidden; }
 .figure-button img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transition: transform .2s; }
 .figure-button:hover img { transform: scale(1.035); }
 .figure-zoom { display: grid; place-items: center; width: 23px; height: 23px; position: absolute; bottom: 5px; right: 5px; border-radius: 50%; background: #ffffffeb; color: #7f8f9b; font-size: 16px; }
-.publication-copy { display: grid; grid-template-rows: auto 1fr auto; gap: 9px; min-width: 0; }
+.publication-copy { display: flex; flex-direction: column; justify-content: center; gap: 10px; min-width: 0; }
 .venue { position: absolute; left: -6px; top: 0; display: inline-block; max-width: calc(100% + 6px); padding: 2px 13px; color: #fff; background: var(--accent-strong); font-size: 12px; line-height: 1.5; font-weight: 650; }
-.publication h3 { min-height: 2.8em; font-size: 21px; line-height: 1.4; font-weight: 600; letter-spacing: 0; }
-.authors { align-self: center; font-size: 17px; line-height: 1.5; color: #59636d; }
+.publication h3 { font-size: 21px; line-height: 1.4; font-weight: 600; letter-spacing: 0; }
+.authors { font-size: 17px; line-height: 1.5; color: #59636d; }
 .authors strong { color: var(--ink); font-weight: 650; }
 .paper-links { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 18px; }
 .paper-links > a, .text-link { display: inline-flex; align-items: center; gap: 5px; font-size: 14px; line-height: 1.6; font-weight: 550; color: var(--accent); padding: 4px 0; }
