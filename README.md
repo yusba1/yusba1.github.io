@@ -42,6 +42,7 @@ GitHub Pages can publish directly from the `main` branch, `/ (root)` folder. `.n
 - [Benchmark Leakage Trap: Can We Trust LLM-based Recommendation?](https://arxiv.org/abs/2602.13626)
 - [Rethinking Evidence Modeling: Context-Coupled Graph Learning for Multimodal Recommendation](https://arxiv.org/abs/2610.15523)
 - [George Interview](https://github.com/zizi129/George-interview)
+- [Wukong Guide](https://github.com/noobccgg/wukonbanxing_app)
 
 ## University emblem
 
